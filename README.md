@@ -1,70 +1,34 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Weather Widget
 
-## Available Scripts
+The custom-made **Weather Widget** is a valuable addition to the planner app as it provides users with real-time weather information for a specific location. By retrieving data from the OpenWeatherMap API, the widget allows users to plan their activities effectively by considering temperature, humidity, wind speed, and weather description.
 
-In the project directory, you can run:
+<kbd>function fetchWeatherData()</kbd>
 
-### `npm start`
+This function is responsible for fetching the weather data from the API based on the user's specified location. It uses an asynchronous HTTP request to retrieve the data and updates the state with the received weather information.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+With its user-friendly interface and clear presentation of weather data, the Weather Widget enhances the app's functionality and provides users with the essential information they need to make informed decisions and optimize their daily schedules.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Custom Game Widget
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The custom-made **Game Widget** is an ideal addition to the planner app, providing users with an interactive and enjoyable gaming experience. 
 
-### `npm run build`
+```javascript
+function handleSquareClick(position) {
+  // Logic for handling square click
+  // Check if square is occupied or if there is a winner
+  // Update game history and determine next player's turn
+}
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The highlighted main function `handleSquareClick` is responsible for managing the logic when a user clicks on a square on the game board. It ensures that the square is not already occupied and there is no winner before updating the game history and determining the next player's turn.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Featuring an appealing design and a responsive user interface, the Game Widget enables users to play Tic Tac Toe effortlessly. It incorporates game history tracking, allowing users to undo moves and start a new game with a simple button click.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+By integrating the Game Widget into the planner app, users can take a break from their tasks and engage in a fun and strategic game within the app itself. This widget offers entertainment, promotes user engagement, and enhances the overall user experience of the planner app.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**WhiteBoardWidget**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The WhiteBoardWidget is a custom-made widget that provides a whiteboard functionality within the planner app. It allows users to draw and sketch their ideas directly on the screen. The main functionality of the widget includes handling mouse events to track drawing actions, such as mouse down, mouse move, and mouse up. It utilizes HTML5 canvas and the 2D drawing context to create a drawing area. The widget provides a responsive and interactive drawing experience, allowing users to freely express their thoughts and visualize their plans. Additionally, it offers a reset button to clear the canvas and start a new drawing session. The WhiteBoardWidget is a valuable addition to the planner app as it enhances creativity, facilitates visual thinking, and provides a convenient platform for brainstorming and organizing ideas.
