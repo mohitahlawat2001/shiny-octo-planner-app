@@ -7,14 +7,13 @@ const NewsWidget = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const url = 'https://newsapi.org/v2/top-headlines?' +
-          'country=us&' +
-          'apiKey=57256a33a893442bbc410a3a4ce3f3b7';
+        const url =
+          'https://newsdata.io/api/1/news?apikey=pub_25246012b74356fb025cdf50f3354a4f989ea&language=en';
 
         const response = await fetch(url);
         const data = await response.json();
 
-        setNews(data.articles);
+        setNews(data.results);
       } catch (error) {
         console.error('Failed to fetch news data:', error);
       }
@@ -26,21 +25,21 @@ const NewsWidget = () => {
   return (
     <div className="news-widget">
       <h2>Top Headlines</h2>
-      {news.length === 0 ? (
+      {news && news.length === 0 ? (
         <p>Loading news...</p>
       ) : (
         <ul>
-          {news.map((item) => (
-            <li key={item.url}>
-              <a href={item.url} target="_blank" rel="noopener noreferrer">
-                {item.title}
-              </a>
-              <p>{item.description}</p>
-              <div className='img-container'>
-              <img src={item.urlToImage} alt={item.title} />
-            </div>
-            </li>
-          ))}
+          {news &&
+            news.map((item) => (
+              <li key={item.title}>
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  {item.title}
+                </a>
+                <p>{item.description}</p>
+                <p>{item.pubDate}</p>
+                <p>{item.source}</p>
+              </li>
+            ))}
         </ul>
       )}
     </div>
