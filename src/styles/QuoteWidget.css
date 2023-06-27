@@ -1,0 +1,38 @@
+/* styles/QuoteWidget.css */
+
+.quote-widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+}
+
+.quote-container {
+  margin-bottom: 20px;
+}
+
+.quote-content {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.quote-author {
+  font-style: italic;
+}
+
+.quote-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quote-button:hover {
+  background-color: #45a049;
+}

@@ -6,6 +6,8 @@ import CalendarWidget from '../widgets/CalendarWidget'
 import WeatherWidget from '../widgets/WeatherWidget'
 import GameWidget from '../widgets/GameWidget'
 import WhiteBoardWidget from '../widgets/WhiteBoardWidget'
+import NewsWidget from '../widgets/NewWidget'
+import QuoteWidget from '../widgets/QuoteWidget'
 
 export default function WidgetGalleryModal({ setShowWidgetModal, selectedWidgetArea, widgets, setWidgets }) {
   const [galleryWidgets, setGalleryWidgets] = useState([
@@ -15,7 +17,9 @@ export default function WidgetGalleryModal({ setShowWidgetModal, selectedWidgetA
     { component: <CalendarWidget />, name: "Calendar" },
     { component: <WeatherWidget />, name: "Weather" },
     { component: <GameWidget />, name: "Game" },
-    { component: <WhiteBoardWidget />, name: "Whiteboard" }
+    { component: <WhiteBoardWidget />, name: "Whiteboard" },
+    { component: <NewsWidget />, name: "News" },
+    { component: <QuoteWidget />, name: "Quote" }
   ])
   return (
     <div className="modal"

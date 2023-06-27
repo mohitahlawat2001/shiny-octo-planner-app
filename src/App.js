@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
 import './App.css';
-import ClockWidget from './widgets/ClockWidget';
 import WidgetGalleryModal from './modals/WidgetGalleryModal';
 import Draggable from 'react-draggable';
-import TimerWidget from './widgets/TimerWidget';
-import CalendarWidget from './widgets/CalendarWidget';
+import WeatherWidget from './widgets/WeatherWidget';
+import GameWidget from './widgets/GameWidget';
+import WhiteBoardWidget from './widgets/WhiteBoardWidget';
+import NewsWidget from './widgets/NewWidget';
+import QuoteWidget from './widgets/QuoteWidget';
+import ClockWidget from './widgets/ClockWidget';
  
 function App() {
  const [widgets, setWidgets] = useState([
-  { id: new Date().getTime(), component: <ClockWidget />, area: 'main-widget', name: "Date and Time" },
-  { id: new Date().getTime() + 2, component: <CalendarWidget />, area: 'right-widget', name: "Calendar" },
-  { id: new Date().getTime() + 1, component: <TimerWidget />, area: 'left-widget', name:"Timer" },
+   { id: new Date().getTime(), component: <WeatherWidget />, area: 'right-widget', name: "Weather" },
+   { id: new Date().getTime() + 4, component: <QuoteWidget />, area: 'left-widget', name: "Quote"},
+   { id: new Date().getTime() + 3, component: <NewsWidget />, area: 'right-widget', name: "News" },
+   { id: new Date().getTime() + 5, component: <ClockWidget />, area: 'main-widget', name: "Date and Time" },
+   { id: new Date().getTime() + 1, component: <GameWidget />, area: 'main-widget', name: "Game" },
+   { id: new Date().getTime() + 2, component: <WhiteBoardWidget />, area: 'left-widget', name: "Whiteboard" },
  ])
  const [showWidgetModal, setShowWidgetModal] = useState(false)
  const [selectedWidgetArea, setSelectedWidgetArea] = useState('')

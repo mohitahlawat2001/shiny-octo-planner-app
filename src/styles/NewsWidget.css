@@ -1,0 +1,41 @@
+.news-widget {
+    width: 400px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: transparent;
+    padding: 20px;
+  }
+  
+  .news-widget h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .news-widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .news-widget li {
+    margin-bottom: 10px;
+  }
+  
+  .news-widget a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .news-widget a:hover {
+    text-decoration: underline;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: auto;
+  }
+  
