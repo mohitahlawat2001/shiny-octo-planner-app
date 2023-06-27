@@ -1,0 +1,140 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color:transparent;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.app {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.text-green {
+  color: #12e177;
+}
+
+.text-orange {
+  color: #ffc72a;
+}
+
+.history-wrapper {
+  width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.history-wrapper .history {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.history-wrapper .history li {
+  list-style: none;
+  text-align: left;
+}
+
+.history-wrapper .history li:before {
+  content: '';
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  background-color: #12e177;
+  margin-right: 4px;
+  margin-bottom: 1px;
+}
+
+.history-wrapper .history li .btn-move {
+  color: #fff;
+}
+
+.history-wrapper .history li .btn-move.active {
+  font-weight: bold;
+  color: #12e177;
+}
+
+.status-message {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.status-message span {
+  font-weight: normal;
+}
+
+.btn-reset {
+  font-size: 0.8rem;
+  color: #fff;
+  border-radius: 15px;
+  padding: 12px 18px;
+  margin-top: 25px;
+  transition: all 0.2s;
+  background-color: #58f638;
+  box-shadow: 0px 0px 0px 1px #ffc72a;
+}
+
+.btn-reset.active {
+  background-color: #ffc72a;
+  box-shadow: none;
+}
+
+.board .board-row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #fff;
+}
+
+.board .board-row:last-child {
+  border-bottom: none;
+}
+
+.board .board-row .square {
+  width: 80px;
+  height: 80px;
+  border-right: 2px solid #fff;
+  font-size: 2.5rem;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.board .board-row .square:last-child {
+  border-right: none;
+}
+
+.board .board-row .square.winning {
+  animation: scaleText 1.4s infinite;
+}
+
+@keyframes scaleText {
+  0% {
+    transform: 2.5rem;
+  }
+  50% {
+    font-size: 3.5rem;
+  }
+  100% {
+    font-size: 2.5rem;
+  }
+}
+
+
