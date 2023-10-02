@@ -1,3 +1,35 @@
+# Planner App
+
+## How to Use Locally
+
+Follow these steps to run the calculator application on your local machine:
+
+1. **Clone the Repository**
+   ```
+   git clone https://github.com/mohitahlawat2001/calculator-app.git
+   ```
+2. **Navigate to the Project Directory**
+   ```
+   cd calculator-app
+   ```
+3. **Install Dependencies**
+   ```
+   npm install
+   ```
+4. **Start the Application**
+   ```
+   npm start
+   ```
+5. **Open in Browser**
+   - Open your web browser and go to [http://localhost:3000](http://localhost:3000)
+   - You should now see the calculator application running locally on your machine.
+
+## Project Setup
+3 folders widgets, styles and modals. As the names suggest, 
+- we will place all the JavaScript files we create for the widgets into the widgets folder
+- all the modals into the modals folder
+- a particular CSS file from one of the components into the styles folder. Essentially, we will copy the styles that comes built into one of the packages we have installed in Step 1 Node Package Manager (NPM). This is so that we can customise the styles of the packages instead of being limited to the default style.
+
 
 ## Weather Widget
 
@@ -50,4 +82,14 @@ Overall, the `NewsWidget` enhances the planner app's functionality by integratin
 
 
 The `QuoteWidget` component is a valuable addition to the planner app as it offers users a source of inspiration and motivation through random quotes. By integrating this widget, users can receive a new quote with a click of a button, enhancing their planning experience with meaningful and uplifting content. The widget fetches quotes from the Quotable API, presenting them in a visually appealing layout with clear separation between the quote content and author. The widget's design is complemented by the provided CSS file, ensuring proper styling and a consistent look. By incorporating the `QuoteWidget`, users can access daily doses of inspiration, empowering them to stay focused and positive throughout their planning endeavors.
+
+
+
+## Contributing
+
+If you'd like to contribute, please fork the repository and create a pull request. You can also open an issue for any bug reports or feature requests.
+
+---
+
+Feel free to reach out with any questions or feedback. Happy calculating! 🧮
 
