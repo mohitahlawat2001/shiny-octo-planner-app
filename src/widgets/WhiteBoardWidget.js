@@ -52,10 +52,12 @@ const WhiteBoardWidget = () => {
         <canvas
           ref={canvasRef}
           className="whiteboard"
+          data-draggable="false"
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseLeave}
+          style={{zIndex:5}}
         />
         <button className="reset-button" onClick={handleReset}>
           Reset

@@ -48,7 +48,7 @@ function App() {
     {widgets.length > 0 && widgets.map((widget, index) => {
      if (widget.area === 'none-widget') {
       return (
-       <Draggable>
+       <Draggable cancel=".whiteboard">
             <div style={{ padding: 10,}} className='widget-container' >
              <div style={{ marginBottom: 10 }}>
               <select value={widget.area}
