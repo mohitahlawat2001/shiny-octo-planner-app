@@ -1,5 +1,9 @@
 # Planner App
 
+## Stats
+
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmohitahlawat2001%2Fshiny-octo-planner-app&label=Visitors&labelColor=%23697689&countColor=%23f47373)
+
 ## How to Use Locally
 
 Follow these steps to run the calculator application on your local machine:
