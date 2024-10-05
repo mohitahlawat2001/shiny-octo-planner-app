@@ -6,11 +6,11 @@ Follow these steps to run the calculator application on your local machine:
 
 1. **Clone the Repository**
    ```
-   git clone https://github.com/mohitahlawat2001/calculator-app.git
+   git clone https://github.com/mohitahlawat2001/shiny-octo-planner-app.git
    ```
 2. **Navigate to the Project Directory**
    ```
-   cd calculator-app
+   cd shiny-octo-planner-app
    ```
 3. **Install Dependencies**
    ```
@@ -25,7 +25,7 @@ Follow these steps to run the calculator application on your local machine:
    - You should now see the calculator application running locally on your machine.
 
 ## Project Setup
-3 folders widgets, styles and modals. As the names suggest, 
+3 folders widgets, styles and models. As the names suggest, 
 - we will place all the JavaScript files we create for the widgets into the widgets folder
 - all the modals into the modals folder
 - a particular CSS file from one of the components into the styles folder. Essentially, we will copy the styles that comes built into one of the packages we have installed in Step 1 Node Package Manager (NPM). This is so that we can customise the styles of the packages instead of being limited to the default style.
@@ -91,5 +91,5 @@ If you'd like to contribute, please fork the repository and create a pull reques
 
 ---
 
-Feel free to reach out with any questions or feedback. Happy calculating! 🧮
+Feel free to reach out with any questions or feedback. Happy contributing!✨
 
