@@ -27,7 +27,7 @@
 
 ## How to Use Locally
 
-Follow these steps to run the calculator application on your local machine:
+Follow these steps to run the planner application on your local machine:
 
 1. **Clone the Repository**
    ```
@@ -50,7 +50,7 @@ Follow these steps to run the calculator application on your local machine:
    - You should now see the calculator application running locally on your machine.
 
 ## Project Setup
-3 folders widgets, styles and models. As the names suggest, 
+3 folders widgets, styles and modals. As the names suggest, 
 - we will place all the JavaScript files we create for the widgets into the widgets folder
 - all the modals into the modals folder
 - a particular CSS file from one of the components into the styles folder. Essentially, we will copy the styles that comes built into one of the packages we have installed in Step 1 Node Package Manager (NPM). This is so that we can customise the styles of the packages instead of being limited to the default style.
