@@ -1,8 +1,29 @@
 # Planner App
 
-## Stats
+## Repository Stats
 
-![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmohitahlawat2001%2Fshiny-octo-planner-app&label=Visitors&labelColor=%23697689&countColor=%23f47373)
+<div align="center">
+   
+![Static Badge](https://img.shields.io/badge/BUILD_WITH-%E2%99%A5-orange?style=flat-square&labelColor=orange)
+![Static Badge](https://img.shields.io/badge/PRS_WELCOME-green?style=flat-square)
+![GitHub watchers](https://img.shields.io/github/watchers/mohitahlawat2001/shiny-octo-planner-app?style=flat-square&label=WATCHERS)
+![GitHub repo size](https://img.shields.io/github/repo-size/mohitahlawat2001/shiny-octo-planner-app?style=flat-square&label=REPO+SIZE)
+![GitHub forks](https://img.shields.io/github/forks/mohitahlawat2001/shiny-octo-planner-app?style=flat-square&label=FORKS)
+![GitHub Repo stars](https://img.shields.io/github/stars/mohitahlawat2001/shiny-octo-planner-app?style=flat-square&label=STARS)
+![GitHub top language](https://img.shields.io/github/languages/top/mohitahlawat2001/shiny-octo-planner-app?style=flat-square&logo=javascript&label=TOP%20LANGUAGE)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr-closed/mohitahlawat2001/shiny-octo-planner-app?style=flat-square&label=PULL+REQUESTS)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-closed-raw/mohitahlawat2001/shiny-octo-planner-app?style=flat-square&label=CLOSED%20ISSUES)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/mohitahlawat2001/shiny-octo-planner-app?style=flat-square&label=ISSUES)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/mohitahlawat2001/shiny-octo-planner-app?style=flat-square&label=PULL%20REQUESTS)
+![GitHub contributors](https://img.shields.io/github/contributors/mohitahlawat2001/shiny-octo-planner-app?style=flat-square&label=CONTRIBUTORS)
+![GitHub last commit](https://img.shields.io/github/last-commit/mohitahlawat2001/shiny-octo-planner-app?display_timestamp=committer&style=flat-square&label=LAST%20COMMIT)
+![GitHub License](https://img.shields.io/github/license/mohitahlawat2001/shiny-octo-planner-app?style=flat-square&label=LICENSE)
+
+</div>
+
+## Socials
+
+
 
 ## How to Use Locally
 
