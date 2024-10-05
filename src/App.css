@@ -13,11 +13,9 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
-  width: 100vw;
+  width: 100%;
   padding: 10px;
-  max-height: 100vh;
   height: 100%;
- 
 }
  
 .item {
