@@ -23,7 +23,8 @@
 
 ## Socials
 
-
+[with minimal functionality](https://mohitahlawat-planner-app.netlify.app/)
+[with mild functionality](https://mohitahlawat-planner-app.web.app/)
 
 ## How to Use Locally
 
@@ -48,6 +49,8 @@ Follow these steps to run the planner application on your local machine:
 5. **Open in Browser**
    - Open your web browser and go to [http://localhost:3000](http://localhost:3000)
    - You should now see the calculator application running locally on your machine.
+6. **Make Sure add what you did in readme**
+   - detail about feature
 
 ## Project Setup
 3 folders widgets, styles and modals. As the names suggest, 
