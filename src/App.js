@@ -8,6 +8,7 @@ import WhiteBoardWidget from "./widgets/WhiteBoardWidget";
 import NewsWidget from "./widgets/NewWidget";
 import QuoteWidget from "./widgets/QuoteWidget";
 import ClockWidget from "./widgets/ClockWidget";
+import BookWidget from "./widgets/BookWidget";
 
 function App() {
   const [widgets, setWidgets] = useState([
@@ -47,7 +48,13 @@ function App() {
       area: "left-widget",
       name: "Whiteboard",
     },
-  ]);
+    {
+      id: new Date().getTime() + 6,
+      component: <BookWidget />,
+      area: "right-widget",
+      name: "Book",
+    },
+  ]); 
 
   const [showWidgetModal, setShowWidgetModal] = useState(false);
   const [selectedWidgetArea, setSelectedWidgetArea] = useState("");
