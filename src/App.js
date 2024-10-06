@@ -8,6 +8,7 @@ import WhiteBoardWidget from "./widgets/WhiteBoardWidget";
 import NewsWidget from "./widgets/NewWidget";
 import QuoteWidget from "./widgets/QuoteWidget";
 import ClockWidget from "./widgets/ClockWidget";
+import VideoRecorder from "./widgets/VideoRecorder";
 
 function App() {
   const [widgets, setWidgets] = useState([
@@ -47,6 +48,12 @@ function App() {
       area: "left-widget",
       name: "Whiteboard",
     },
+    {
+      id: new Date().getTime() + 6,
+      component: <VideoRecorder />,
+      area: "left-widget",
+      name: "VideoRecorder",
+    }
   ]);
 
   const [showWidgetModal, setShowWidgetModal] = useState(false);
