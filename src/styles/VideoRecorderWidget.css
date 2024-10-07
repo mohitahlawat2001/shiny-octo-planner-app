@@ -23,7 +23,7 @@ video {
     margin: 10px 0; 
 }
 
-button {
+.record-button {
     padding: 10px 15px; 
     border: none; 
     border-radius: 4px; 
@@ -33,7 +33,7 @@ button {
     transition: background-color 0.3s; 
 }
 
-button:hover {
+.record-button:hover {
     background-color: #0056b3; 
 }
 
