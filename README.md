@@ -52,6 +52,22 @@ Follow these steps to run the planner application on your local machine:
 6. **Make Sure add what you did in readme**
    - detail about feature
 
+Follow these steps to run the planner application on your local machine using Docker:
+
+1.**Create Docker Image**
+   ```
+   docker build -t my-app .
+   ```
+2.**Run Docker Image**
+   ```
+   docker run -p 3000:3000 my-app
+   ```
+3. **Open in Browser**
+   - Open your web browser and go to [http://localhost:3000](http://localhost:3000)
+   - You should now see the calculator application running locally on your machine inside Docker.
+  
+
+
 ## Project Setup
 3 folders widgets, styles and modals. As the names suggest, 
 - we will place all the JavaScript files we create for the widgets into the widgets folder
