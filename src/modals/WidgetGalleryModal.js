@@ -8,6 +8,7 @@ import GameWidget from "../widgets/GameWidget";
 import WhiteBoardWidget from "../widgets/WhiteBoardWidget";
 import NewsWidget from "../widgets/NewWidget";
 import QuoteWidget from "../widgets/QuoteWidget";
+import VideoRecorder from "../widgets/VideoRecorder";
 
 export default function WidgetGalleryModal({
   setShowWidgetModal,
@@ -25,6 +26,7 @@ export default function WidgetGalleryModal({
     { component: <WhiteBoardWidget />, name: "Whiteboard" },
     { component: <NewsWidget />, name: "News" },
     { component: <QuoteWidget />, name: "Quote" },
+    {component: <VideoRecorder/>, name : "Video Recorder" },
   ]);
   return (
     <div

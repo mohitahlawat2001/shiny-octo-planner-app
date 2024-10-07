@@ -9,6 +9,7 @@ import NewsWidget from "./widgets/NewWidget";
 import QuoteWidget from "./widgets/QuoteWidget";
 import ClockWidget from "./widgets/ClockWidget";
 import BookWidget from "./widgets/BookWidget";
+import VideoRecorder from "./widgets/VideoRecorder";
 
 function App() {
   const [widgets, setWidgets] = useState([
@@ -54,7 +55,13 @@ function App() {
       area: "right-widget",
       name: "Book",
     },
-  ]); 
+    {
+      id: new Date().getTime() + 7,
+      component: <VideoRecorder />,
+      area: "left-widget",
+      name: "VideoRecorder",
+    }
+  ]);
 
   const [showWidgetModal, setShowWidgetModal] = useState(false);
   const [selectedWidgetArea, setSelectedWidgetArea] = useState("");
