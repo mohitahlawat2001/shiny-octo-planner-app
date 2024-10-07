@@ -8,6 +8,7 @@ import WhiteBoardWidget from "./widgets/WhiteBoardWidget";
 import NewsWidget from "./widgets/NewWidget";
 import QuoteWidget from "./widgets/QuoteWidget";
 import ClockWidget from "./widgets/ClockWidget";
+import BookWidget from "./widgets/BookWidget";
 import VideoRecorder from "./widgets/VideoRecorder";
 
 function App() {
@@ -50,6 +51,12 @@ function App() {
     },
     {
       id: new Date().getTime() + 6,
+      component: <BookWidget />,
+      area: "right-widget",
+      name: "Book",
+    },
+    {
+      id: new Date().getTime() + 7,
       component: <VideoRecorder />,
       area: "left-widget",
       name: "VideoRecorder",

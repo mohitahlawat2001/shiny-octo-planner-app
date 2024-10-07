@@ -1,0 +1,74 @@
+.book-widget {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    max-height: 250px;
+}
+
+.book-form {
+    display: flex;
+    gap: 10px;
+}
+
+.book-form input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    min-width: 25ch;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.book-button {
+  appearance: none;
+  background-color: #4caf50;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.book-button:hover {
+  background-color: #2c974b;
+}
+
+.book-results-container {
+    max-height: 250px; 
+    overflow-y: scroll;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.book-results {
+    margin-bottom: 5px;
+    flex: 1 1 auto; 
+      
+}
+
+.book-results hr {
+    margin: 5px 0;
+}
+
+.book-isbn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+

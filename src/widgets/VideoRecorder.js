@@ -90,11 +90,11 @@ const VideoRecorder = () => {
 
       <div className="controls">
         {!isRecording ? (
-          <button onClick={startRecording}>
+          <button className='record-button' onClick={startRecording}>
             Start Recording
           </button>
         ) : (
-          <button onClick={stopRecording}>Stop Recording</button>
+          <button className='record-button' onClick={stopRecording}>Stop Recording</button>
         )}
       </div>
 
