@@ -151,3 +151,75 @@ select {
   font-weight: bold;
   margin-bottom: 10px;
 }
+/* Updated styles for a light pink with 25% transparency */
+
+/* Specific style for the News widget */
+.news-widget {
+  color: rgba(255, 182, 193, 0.75); /* Light pink with 75% opacity */
+}
+
+.news-widget h2 {
+  color: rgba(255, 182, 193, 0.75); /* Light pink for the heading */
+}
+
+.news-widget .news-item {
+  border-bottom: 1px solid rgba(255, 182, 193, 0.75); /* Light pink border */
+  padding: 10px 0;
+}
+
+.news-widget .news-item:last-child {
+  border-bottom: none;
+}
+
+.news-widget .news-date {
+  color: rgba(255, 182, 193, 0.75); /* Light pink for the date */
+}
+
+.dashboard-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.floating-widget-wrapper {
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+
+.widget-container {
+  background-color: rgba(255, 182, 193, 0.25); /* Light pink with 25% transparency */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.floating-widget-wrapper .widget-container {
+  z-index: 1000;
+}
+
+/* Style for text input */
+.text-input {
+  outline: none;
+  border: none;
+}
+
+/* Updated colors for the News widget */
+.widget-container.news-widget, .App .widget-container.news-widget {
+  color: rgba(255, 182, 193, 0.75); /* Light pink text color */
+}
+
+.widget-container.news-widget h2, .App .widget-container.news-widget h2 {
+  color: rgba(255, 182, 193, 0.75); /* Light pink heading */
+}
+
+.widget-container.news-widget .news-item, .App .widget-container.news-widget .news-item {
+  color: rgba(255, 182, 193, 0.75); /* Light pink for text */
+  border-bottom: 1px solid rgba(255, 182, 193, 0.75);
+  padding: 10px 0;
+}
+
+.widget-container.news-widget .news-date {
+  color: rgba(255, 182, 193, 0.75); /* Light pink for date */
+}
