@@ -10,7 +10,7 @@ import QuoteWidget from "./widgets/QuoteWidget";
 import ClockWidget from "./widgets/ClockWidget";
 import BookWidget from "./widgets/BookWidget";
 import VideoRecorder from "./widgets/VideoRecorder";
-
+import PomodoroWidget from './widgets/PomodoroWidget';
 function App() {
   const [widgets, setWidgets] = useState([
     {
@@ -60,6 +60,12 @@ function App() {
       component: <VideoRecorder />,
       area: "left-widget",
       name: "VideoRecorder",
+    },
+    {
+      id: new Date().getTime() + 8,
+      component: <PomodoroWidget/>,
+      area: "main-widget",
+      name: "Pomodoro Timer",
     }
   ]);
 
