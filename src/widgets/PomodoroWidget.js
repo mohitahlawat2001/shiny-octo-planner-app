@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import '../styles/PomodoroWidget.css'
+import { CircularProgressbar,buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css'
 const PomodoroWidget = () => {
     const [pomordroSession, setPomordroSession] = useState({
         sessionTime: 1500,//25 minutes
@@ -9,7 +11,13 @@ const PomodoroWidget = () => {
         isBreak: false,
     });
 
-
+    const calculateGradient = () => {
+        const totalTime = pomordroSession.isBreak ? pomordroSession.breakTime : 1500; // Total time in seconds
+        const remainingTime = pomordroSession.sessionTime;
+        const percentage = (remainingTime / totalTime) * 100; // Calculate percentage of remaining time
+        return `${percentage}%`; // Return the percentage for the gradient
+    };
+    
     useEffect(()=>{
         let timer = null;
         if(pomordroSession.isStudying && pomordroSession.sessionTime>0){
@@ -54,13 +62,27 @@ const PomodoroWidget = () => {
         }
         return `${minutes}:${seconds}`;
     }
+    
+    const timeLeftPercentage = pomordroSession.isBreak
+        ? (pomordroSession.sessionTime / pomordroSession.breakTime) * 100
+        : (pomordroSession.sessionTime / 1500) * 100;
+
     return (
         <div className='pomodro-widget'>
             <h1 className='pomodro-h1'>Pomodoro Timer </h1>
-            <div className="pomodro-container">
-
+            <div 
+    className="pomodro-container" 
+>
             <div className="pomodro-timer">
-            {remainingTime(pomordroSession.sessionTime)}
+            <CircularProgressbar
+            text={remainingTime(pomordroSession.sessionTime)}
+            value={timeLeftPercentage}
+            styles={buildStyles({
+                textColor:'#fff',
+                pathColor: pomordroSession.isStudying ? "red" : "green",
+                tailColor:'rgba(255,255,255,.2)',
+              })}
+            />
             </div>
             <div className='pomodro-buttons'>
                 <button className={pomordroSession.isStudying ? 'pause-btn' : 'start-btn'}  onClick={()=>setPomordroSession((prevTime)=>{

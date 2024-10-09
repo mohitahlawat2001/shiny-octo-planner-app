@@ -1,37 +1,31 @@
-.pomodro-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .pomodro-h1{
+.pomodro-h1 {
     font-size: 25px;
     margin-bottom: 1rem;
     text-align: center;
     font-family: monospace;
     font-weight: 700;
-    
-  }
-  
-  .pomodro-timer{
+
+}
+
+.pomodro-timer {
     font-size: 50px;
     margin-bottom: 1rem;
     font-family: monospace;
     font-weight: 700;
-  }
+    background-color: rgb(71, 68, 68);
+    border-radius: 50%;
 
-.pomodro-buttons{
+}
+
+.pomodro-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
-.start-btn{
-    padding: 10px   20px;
+
+.start-btn {
+    padding: 10px 20px;
     background-color: #2ecc71;
     color: white;
     border: none;
@@ -39,13 +33,15 @@
     font-weight: 700;
     border-radius: 50%;
     font-size: 18px;
-    
+
 }
-.start-btn:hover{
+
+.start-btn:hover {
     background-color: #27ae60;
 }
-.pause-btn{
-    padding: 10px   20px;
+
+.pause-btn {
+    padding: 10px 20px;
     background-color: #1f43c5;
     color: white;
     border: none;
@@ -54,11 +50,13 @@
     border-radius: 50%;
     font-size: 18px;
 }
-.pause-btn:hover{
+
+.pause-btn:hover {
     background-color: #1a3ac5;
 }
-.restart-btn{
-    padding: 10px   20px;
+
+.restart-btn {
+    padding: 10px 20px;
     background-color: #da481b;
     color: white;
     border: none;
@@ -67,6 +65,11 @@
     border-radius: 50%;
     font-size: 18px;
 }
-.restart-btn:hover{
+
+.restart-btn:hover {
     background-color: #c53e1f;
+}
+
+.pomodro-widget {
+    margin-bottom: 3rem;
 }
