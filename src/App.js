@@ -26,12 +26,6 @@ function App() {
       name: "Quote",
     },
     {
-      id: new Date().getTime() + 3,
-      component: <NewsWidget />,
-      area: "right-widget",
-      name: "News",
-    },
-    {
       id: new Date().getTime() + 5,
       component: <ClockWidget />,
       area: "main-widget",
@@ -64,7 +58,7 @@ function App() {
     {
       id: new Date().getTime() + 8,
       component: <PomodoroWidget/>,
-      area: "main-widget",
+      area: "right-widget",
       name: "Pomodoro Timer",
     }
   ]);

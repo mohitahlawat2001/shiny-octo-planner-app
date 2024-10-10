@@ -81,7 +81,7 @@ const PomodoroWidget = () => {
                 textColor:'#fff',
                 pathColor: pomordroSession.isStudying ? "red" : "green",
                 tailColor:'rgba(255,255,255,.2)',
-              })}
+                })}
             />
             </div>
             <div className='pomodro-buttons'>

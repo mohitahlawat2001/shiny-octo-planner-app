@@ -9,7 +9,7 @@ import WhiteBoardWidget from "../widgets/WhiteBoardWidget";
 import NewsWidget from "../widgets/NewWidget";
 import QuoteWidget from "../widgets/QuoteWidget";
 import VideoRecorder from "../widgets/VideoRecorder";
-
+import PomodoroWidget from "../widgets/PomodoroWidget";
 export default function WidgetGalleryModal({
   setShowWidgetModal,
   selectedWidgetArea,
@@ -27,6 +27,7 @@ export default function WidgetGalleryModal({
     { component: <NewsWidget />, name: "News" },
     { component: <QuoteWidget />, name: "Quote" },
     {component: <VideoRecorder/>, name : "Video Recorder" },
+    { component: <PomodoroWidget />, name: "Pomodoro" },
   ]);
   return (
     <div

@@ -1,10 +1,10 @@
 .pomodro-h1 {
-    font-size: 25px;
-    margin-bottom: 1rem;
+    font-size: 20px;
+    margin-bottom: 3px;
     text-align: center;
     font-family: monospace;
     font-weight: 700;
-
+    color: rgb(26, 22, 22);
 }
 
 .pomodro-timer {
@@ -14,6 +14,7 @@
     font-weight: 700;
     background-color: rgb(71, 68, 68);
     border-radius: 50%;
+    width: 125px;
 
 }
 
@@ -31,8 +32,8 @@
     border: none;
     font-family: monospace;
     font-weight: 700;
-    border-radius: 50%;
-    font-size: 18px;
+    border-radius: 5px;
+    font-size: 12px;
 
 }
 
@@ -47,8 +48,8 @@
     border: none;
     font-family: monospace;
     font-weight: 700;
-    border-radius: 50%;
-    font-size: 18px;
+    border-radius: 5px;
+    font-size: 12px;
 }
 
 .pause-btn:hover {
@@ -62,14 +63,23 @@
     border: none;
     font-family: monospace;
     font-weight: 700;
-    border-radius: 50%;
-    font-size: 18px;
+    border-radius: 5px;
+    font-size: 12px;
 }
 
 .restart-btn:hover {
     background-color: #c53e1f;
 }
 
-.pomodro-widget {
-    margin-bottom: 3rem;
+.CircularProgressbar  {
+    height: 125px;
+}
+
+.pomodro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-top: 1rem;
 }
