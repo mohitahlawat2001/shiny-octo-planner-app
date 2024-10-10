@@ -88,7 +88,7 @@
 select {
   background-color: #efaeae;
   max-width: 100%;
-  width: 100%;
+  width: 20%;
   box-sizing: border-box;
   overflow: hidden;
   text-overflow: ellipsis;
