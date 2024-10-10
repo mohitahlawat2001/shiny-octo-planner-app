@@ -40,12 +40,17 @@
 }
  
 .add-widget-button {
-  background-color: transparent;
-  color: white;
-  border: none;
-  font-size: 15px;
+  background-color: white;
+  color: #352f44;
+  border: solid #5c5470;
+  font-size: 25px;
   text-align: center;
   cursor: pointer;
+  opacity: 80%;
+  font-weight: 600;
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
  
 .add-widget-button:hover {
