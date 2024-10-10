@@ -1,12 +1,11 @@
 .App {
   background: url("background.jpg");
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-   
 }
- 
+
 .container {
   display: flex;
   flex-direction: row;
@@ -15,9 +14,9 @@
   gap: 10px;
   width: 100%;
   padding: 10px;
-  height: 100%;
+  min-height: 100vh;
 }
- 
+
 .item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0);
@@ -25,20 +24,20 @@
   font-size: 30px;
   text-align: center;
 }
- 
+
 .time {
   font-size: 80px;
   color: white;
   text-align: center;
 }
- 
+
 .date {
   font-size: 20px;
   color: white;
   text-align: center;
   font-weight: bold;
 }
- 
+
 .add-widget-button {
   background-color: transparent;
   color: white;
@@ -47,11 +46,11 @@
   text-align: center;
   cursor: pointer;
 }
- 
+
 .add-widget-button:hover {
   color: #1e1e1e;
 }
- 
+
 .right-widget,
 .left-widget,
 .main-widget {
@@ -61,21 +60,20 @@
   flex-direction: column;
   gap: 10px;
   height: 100%;
+  width: 33.33%;
   max-width: 500px;
 }
- 
+
 .none-widget {
   position: fixed;
-  /* height: 100vh;
-  width: 100vw; */
   top: 0px;
   left: 0px;
 }
 
 select {
- background-color: #efaeae;
+  background-color: #efaeae;
 }
- 
+
 /* Modal */
 .modal {
   position: fixed;
@@ -83,47 +81,47 @@ select {
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
- 
+
 .modal-content {
   background-color: #183A37;
   margin: auto;
   padding: 20px;
   width: 50%;
-  max-height: 50vh;
-  overflow: scroll;
+  max-height: 80vh;
+  overflow: auto;
 }
- 
+
 .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
- 
+
 .modal-header h2 {
   color: white;
   font-weight: bold;
   font-size: 25px;
 }
- 
+
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
- 
+
 .widget-gallery-item {
   color: black;
   border: 1px solid white;
   padding: 10px;
   margin-bottom: 10px;
 }
- 
+
 .text-input {
   outline: none;
   border: none;
@@ -135,7 +133,7 @@ select {
   margin-top: 10px;
   padding-bottom: 3px;
 }
- 
+
 .widget-container {
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -143,27 +141,25 @@ select {
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
- 
 }
- 
-.widget-gallery-item-name{
+
+.widget-gallery-item-name {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* Updated styles for a light pink with 25% transparency */
 
-/* Specific style for the News widget */
+/* News widget styles */
 .news-widget {
-  color: rgba(255, 182, 193, 0.75); /* Light pink with 75% opacity */
+  color: rgba(255, 182, 193, 0.75);
 }
 
 .news-widget h2 {
-  color: rgba(255, 182, 193, 0.75); /* Light pink for the heading */
+  color: rgba(255, 182, 193, 0.75);
 }
 
 .news-widget .news-item {
-  border-bottom: 1px solid rgba(255, 182, 193, 0.75); /* Light pink border */
+  border-bottom: 1px solid rgba(255, 182, 193, 0.75);
   padding: 10px 0;
 }
 
@@ -172,13 +168,13 @@ select {
 }
 
 .news-widget .news-date {
-  color: rgba(255, 182, 193, 0.75); /* Light pink for the date */
+  color: rgba(255, 182, 193, 0.75);
 }
 
 .dashboard-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -189,7 +185,7 @@ select {
 }
 
 .widget-container {
-  background-color: rgba(255, 182, 193, 0.25); /* Light pink with 25% transparency */
+  background-color: rgba(255, 182, 193, 0.25);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -199,27 +195,74 @@ select {
   z-index: 1000;
 }
 
-/* Style for text input */
-.text-input {
-  outline: none;
-  border: none;
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .right-widget,
+  .left-widget,
+  .main-widget {
+    width: 48%;
+    max-width: none;
+  }
 }
 
-/* Updated colors for the News widget */
-.widget-container.news-widget, .App .widget-container.news-widget {
-  color: rgba(255, 182, 193, 0.75); /* Light pink text color */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-widget,
+  .left-widget,
+  .main-widget {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .time {
+    font-size: 60px;
+  }
+
+  .date {
+    font-size: 18px;
+  }
+
+  .item {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
 }
 
-.widget-container.news-widget h2, .App .widget-container.news-widget h2 {
-  color: rgba(255, 182, 193, 0.75); /* Light pink heading */
-}
+@media screen and (max-width: 480px) {
+  .time {
+    font-size: 40px;
+  }
 
-.widget-container.news-widget .news-item, .App .widget-container.news-widget .news-item {
-  color: rgba(255, 182, 193, 0.75); /* Light pink for text */
-  border-bottom: 1px solid rgba(255, 182, 193, 0.75);
-  padding: 10px 0;
-}
+  .date {
+    font-size: 16px;
+  }
 
-.widget-container.news-widget .news-date {
-  color: rgba(255, 182, 193, 0.75); /* Light pink for date */
+  .item {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .modal-header h2 {
+    font-size: 20px;
+  }
+
+  .widget-gallery-item-name {
+    font-size: 18px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
 }
