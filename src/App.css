@@ -1,51 +1,41 @@
-/* Base styles */
 .App {
-  background: url("background.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: url("background.jpg");
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
   width: 100%;
-  max-width: 1200px;
   padding: 10px;
-  box-sizing: border-box;
-  margin: 0 auto;
+  min-height: 100vh;
 }
 
 .item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0);
-  padding: 15px;
-  font-size: 24px;
+  padding: 20px;
+  font-size: 30px;
   text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-  word-wrap: break-word;
 }
 
 .time {
-  font-size: 60px;
+  font-size: 80px;
   color: white;
   text-align: center;
-  word-wrap: break-word;
 }
 
 .date {
-  font-size: 18px;
+  font-size: 20px;
   color: white;
   text-align: center;
   font-weight: bold;
-  word-wrap: break-word;
 }
 
 .add-widget-button {
@@ -55,11 +45,6 @@
   font-size: 15px;
   text-align: center;
   cursor: pointer;
-  padding: 5px 10px;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .add-widget-button:hover {
@@ -74,9 +59,9 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  flex: 1;
-  min-width: 250px;
-  max-width: 100%;
+  height: 100%;
+  width: 33.33%;
+  max-width: 500px;
 }
 
 .none-widget {
@@ -87,11 +72,6 @@
 
 select {
   background-color: #efaeae;
-  max-width: 100%;
-  width: 20%;
-  box-sizing: border-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* Modal */
@@ -101,8 +81,8 @@ select {
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -111,8 +91,7 @@ select {
   background-color: #183A37;
   margin: auto;
   padding: 20px;
-  width: 90%;
-  max-width: 500px;
+  width: 50%;
   max-height: 80vh;
   overflow: auto;
 }
@@ -126,14 +105,11 @@ select {
 .modal-header h2 {
   color: white;
   font-weight: bold;
-  font-size: 22px;
-  margin: 0;
-  word-wrap: break-word;
+  font-size: 25px;
 }
 
 .row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
@@ -144,10 +120,6 @@ select {
   border: 1px solid white;
   padding: 10px;
   margin-bottom: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-  word-wrap: break-word;
 }
 
 .text-input {
@@ -157,12 +129,9 @@ select {
   width: 100%;
   background-color: transparent;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 10px;
   padding-bottom: 3px;
-  box-sizing: border-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .widget-container {
@@ -172,18 +141,12 @@ select {
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 15px;
-  box-sizing: border-box;
-  overflow: hidden;
 }
 
 .widget-gallery-item-name {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
-  word-wrap: break-word;
 }
 
 /* News widget styles */
@@ -193,14 +156,11 @@ select {
 
 .news-widget h2 {
   color: rgba(255, 182, 193, 0.75);
-  font-size: 20px;
-  word-wrap: break-word;
 }
 
 .news-widget .news-item {
   border-bottom: 1px solid rgba(255, 182, 193, 0.75);
   padding: 10px 0;
-  word-wrap: break-word;
 }
 
 .news-widget .news-item:last-child {
@@ -209,7 +169,6 @@ select {
 
 .news-widget .news-date {
   color: rgba(255, 182, 193, 0.75);
-  font-size: 14px;
 }
 
 .dashboard-container {
@@ -225,49 +184,32 @@ select {
   height: auto;
 }
 
+.widget-container {
+  background-color: rgba(255, 182, 193, 0.25);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
 .floating-widget-wrapper .widget-container {
   z-index: 1000;
 }
 
-/* Responsive styles */
+/* Responsive adjustments */
 @media screen and (max-width: 1200px) {
   .container {
-    padding: 15px;
+    flex-wrap: wrap;
   }
-}
 
-@media screen and (min-width: 701px) and (max-width: 1000px) {
-  .container {
-    justify-content: space-around;
-  }
-  
   .right-widget,
   .left-widget,
   .main-widget {
-    flex-basis: calc(50% - 10px);
-    max-width: calc(50% - 10px);
-  }
-
-  .widget-container,
-  .item {
-    width: 100%;
-  }
-
-  .time {
-    font-size: 50px;
-  }
-
-  .date {
-    font-size: 16px;
-  }
-
-  .item {
-    font-size: 20px;
-    padding: 12px;
+    width: 48%;
+    max-width: none;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
     align-items: center;
@@ -281,6 +223,25 @@ select {
   }
 
   .time {
+    font-size: 60px;
+  }
+
+  .date {
+    font-size: 18px;
+  }
+
+  .item {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .time {
     font-size: 40px;
   }
 
@@ -289,41 +250,19 @@ select {
   }
 
   .item {
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .time {
-    font-size: 36px;
-  }
-
-  .date {
-    font-size: 14px;
-  }
-
-  .item {
-    font-size: 16px;
-    padding: 8px;
-  }
-
-  .modal-content {
-    width: 95%;
-    padding: 15px;
   }
 
   .modal-header h2 {
+    font-size: 20px;
+  }
+
+  .widget-gallery-item-name {
     font-size: 18px;
   }
 
-  .add-widget-button {
-    font-size: 14px;
-    padding: 5px 8px;
+  .modal-content {
+    width: 90%;
   }
-}
-
-/* Ensure all elements include padding in their total width */
-* {
-  box-sizing: border-box;
 }
