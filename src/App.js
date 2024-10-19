@@ -11,6 +11,7 @@ import ClockWidget from "./widgets/ClockWidget";
 import BookWidget from "./widgets/BookWidget";
 import VideoRecorder from "./widgets/VideoRecorder";
 import PomodoroWidget from './widgets/PomodoroWidget';
+
 function App() {
   const [widgets, setWidgets] = useState([
     {
@@ -58,9 +59,10 @@ function App() {
     {
       id: new Date().getTime() + 8,
       component: <PomodoroWidget/>,
-      area: "right-widget",
+      area: "main-widget",
       name: "Pomodoro Timer",
     }
+   
   ]);
 
   const [showWidgetModal, setShowWidgetModal] = useState(false);
@@ -198,7 +200,7 @@ function App() {
                 widgets.map((widget, index) => {
                   if (widget.area === "main-widget") {
                     return (
-                      <div style={{ padding: 10 }} className="widget-container">
+                      <div style={{ padding: 10 }} className="widget-container" >
                         <div style={{ marginBottom: 10 }}>
                           <select
                             value={widget.area}
