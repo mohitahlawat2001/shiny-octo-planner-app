@@ -36,13 +36,36 @@ export default function WidgetGalleryModal({
         setShowWidgetModal(false);
       }}
     >
-      <div className="modal-content">
-        <div className="modal-header">
-          <h2>Widget Gallery</h2>
-          <div>
+      <div style={{borderRadius: '16px'}} className="modal-content" >
+        <div  className="modal-header">
+          <h2
+          style={{
+              position: 'absolute',
+              top: '20px',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              zIndex: 1000,
+              fontFamily: "'Helvetica Neue', Arial, sans-serif",
+              fontSize: '28px',
+              fontWeight: '600',
+              color: 'white',
+              textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
+              padding: '10px 20px',
+              backgroundColor: '#183a37',
+              borderRadius: '16px',
+              boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+              letterSpacing: '1px',
+              textTransform: 'uppercase'
+            }}  
+            className="widget-gallery-title"
+           >
+            Widget Gallery
+          </h2>
+          
+          <div >
             {galleryWidgets.map((widget, index) => {
               return (
-                <div
+                <div 
                   key={index}
                   className="widget-gallery-item"
                   onClick={() => {
