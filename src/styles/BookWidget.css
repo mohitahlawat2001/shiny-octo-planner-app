@@ -3,6 +3,7 @@
     max-width: 400px;
     margin: 0 auto;
     max-height: 250px;
+    overflow: hidden;
 }
 
 .book-form {
