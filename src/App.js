@@ -11,6 +11,7 @@ import ClockWidget from "./widgets/ClockWidget";
 import BookWidget from "./widgets/BookWidget";
 import VideoRecorder from "./widgets/VideoRecorder";
 import PomodoroWidget from './widgets/PomodoroWidget';
+import Pass from './widgets/Pass';
 
 function App() {
   const [widgets, setWidgets] = useState([
@@ -61,7 +62,14 @@ function App() {
       component: <PomodoroWidget/>,
       area: "main-widget",
       name: "Pomodoro Timer",
+    },
+    {
+      id: new Date().getTime() + 9,
+      component: <Pass/>,
+      area: "right-widget",
+      name: "Pass",
     }
+
    
   ]);
 

@@ -10,6 +10,7 @@ import NewsWidget from "../widgets/NewWidget";
 import QuoteWidget from "../widgets/QuoteWidget";
 import VideoRecorder from "../widgets/VideoRecorder";
 import PomodoroWidget from "../widgets/PomodoroWidget";
+import Pass from "../widgets/Pass";
 export default function WidgetGalleryModal({
   setShowWidgetModal,
   selectedWidgetArea,
@@ -28,6 +29,7 @@ export default function WidgetGalleryModal({
     { component: <QuoteWidget />, name: "Quote" },
     {component: <VideoRecorder/>, name : "Video Recorder" },
     { component: <PomodoroWidget />, name: "Pomodoro" },
+    { component: <Pass />, name: "Pass"}
   ]);
   return (
     <div
