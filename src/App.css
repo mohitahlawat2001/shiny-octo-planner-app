@@ -88,25 +88,27 @@ select {
 }
 
 .modal-content {
-  background-color: #183A37;
   margin: auto;
   padding: 20px;
   width: 50%;
   max-height: 80vh;
   overflow: auto;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .modal-header {
+  margin-top: 30px;
+  margin-left: 17%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.modal-header h2 {
-  color: white;
-  font-weight: bold;
-  font-size: 25px;
-}
 
 .row {
   display: flex;
