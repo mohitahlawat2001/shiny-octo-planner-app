@@ -12,6 +12,7 @@ import BookWidget from "./widgets/BookWidget";
 import VideoRecorder from "./widgets/VideoRecorder";
 import PomodoroWidget from './widgets/PomodoroWidget';
 import Pass from './widgets/Pass';
+import AlarmWidget from './widgets/AlarmWidget';
 
 function App() {
   const [widgets, setWidgets] = useState([
@@ -68,6 +69,12 @@ function App() {
       component: <Pass/>,
       area: "right-widget",
       name: "Pass",
+    },
+    {
+      id: new Date().getTime() + 10, 
+      component: <AlarmWidget />, 
+      area: "right-widget",
+      name: "Alarm Clock"
     }
 
    
