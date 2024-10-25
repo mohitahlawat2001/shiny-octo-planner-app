@@ -1,60 +1,59 @@
-.alarm-clock{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
+.alarm-clock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
 }
 
-.alarm-input{
-    border-radius: 5px;
-    padding: 0.5rem;
-    border: 0.10rem blue solid;
-    width: 100%; 
+.alarm-input {
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 0.1rem blue solid;
+  width: 100%;
 }
 
-.alarm-inp-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 0.4rem; 
-    margin-bottom: 0.4rem;
+.alarm-inp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
-.alarm-button{
-    padding: 0.6rem; 
-    border: 1px blue solid; 
-    background-color: blue;
-    color: white; 
-    border-radius: 10px; 
-
+.alarm-button {
+  padding: 0.6rem;
+  border: 1px blue solid;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
 }
 
-:hover.alarm-button{
-    background-color: rgba(0, 0, 255, 0.598);
+:hover.alarm-button {
+  background-color: rgba(0, 0, 255, 0.598);
 }
 
-.delete-alarm{
-    padding: 0.6rem; 
-    border: 1px red solid; 
-    background-color: red;
-    color: white; 
-    border-radius: 10px; 
+.delete-alarm {
+  padding: 0.6rem;
+  border: 1px red solid;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
 }
 
-:hover.delete-alarm{
-    background-color: rgba(255, 0, 0, 0.781);
+:hover.delete-alarm {
+  background-color: rgba(255, 0, 0, 0.781);
 }
 
-.set-alarm-list{
-    margin-top: 0.8rem;
-    display: flex;
-    gap: 0.5rem; 
-    align-items: center;
-    justify-content: center;
-    border: 0.2rem rgba(128, 128, 128, 0.436) dotted;
-    padding: 0.4rem;
+.set-alarm-list {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem rgba(128, 128, 128, 0.436) dotted;
+  padding: 0.4rem;
 }

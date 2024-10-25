@@ -1,34 +1,35 @@
 .book-widget {
-    padding: 20px;
-    max-width: 400px;
-    margin: 0 auto;
-    max-height: 250px;
-    overflow: hidden;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  max-height: 250px;
+  overflow: hidden;
 }
 
 .book-form {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .book-form input[type="text"] {
-    flex-grow: 1;
-    padding: 5px;
-    min-width: 25ch;
-    border: 1px solid black;
-    border-radius: 3px;
+  flex-grow: 1;
+  padding: 5px;
+  min-width: 25ch;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .book-button {
   appearance: none;
   background-color: #4caf50;
-  border: 1px solid rgba(27, 31, 35, .15);
+  border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -48,28 +49,24 @@
 }
 
 .book-results-container {
-    max-height: 250px; 
-    overflow-y: scroll;
-    margin-top: 10px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 3px;
+  max-height: 250px;
+  overflow-y: scroll;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .book-results {
-    margin-bottom: 5px;
-    flex: 1 1 auto; 
-      
+  margin-bottom: 5px;
+  flex: 1 1 auto;
 }
 
 .book-results hr {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .book-isbn-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
-
-

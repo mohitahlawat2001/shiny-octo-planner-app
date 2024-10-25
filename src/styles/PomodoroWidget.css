@@ -1,85 +1,83 @@
 .pomodro-h1 {
-    font-size: 20px;
-    margin-bottom: 3px;
-    text-align: center;
-    font-family: monospace;
-    font-weight: 700;
-    color: rgb(26, 22, 22);
+  font-size: 20px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+  color: rgb(26, 22, 22);
 }
 
 .pomodro-timer {
-    font-size: 50px;
-    margin-bottom: 1rem;
-    font-family: monospace;
-    font-weight: 700;
-    background-color: rgb(71, 68, 68);
-    border-radius: 50%;
-    width: 125px;
-
+  font-size: 50px;
+  margin-bottom: 1rem;
+  font-family: monospace;
+  font-weight: 700;
+  background-color: rgb(71, 68, 68);
+  border-radius: 50%;
+  width: 125px;
 }
 
 .pomodro-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .start-btn {
-    padding: 10px 20px;
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    font-family: monospace;
-    font-weight: 700;
-    border-radius: 5px;
-    font-size: 12px;
-
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  font-family: monospace;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 .start-btn:hover {
-    background-color: #27ae60;
+  background-color: #27ae60;
 }
 
 .pause-btn {
-    padding: 10px 20px;
-    background-color: #1f43c5;
-    color: white;
-    border: none;
-    font-family: monospace;
-    font-weight: 700;
-    border-radius: 5px;
-    font-size: 12px;
+  padding: 10px 20px;
+  background-color: #1f43c5;
+  color: white;
+  border: none;
+  font-family: monospace;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 .pause-btn:hover {
-    background-color: #1a3ac5;
+  background-color: #1a3ac5;
 }
 
 .restart-btn {
-    padding: 10px 20px;
-    background-color: #da481b;
-    color: white;
-    border: none;
-    font-family: monospace;
-    font-weight: 700;
-    border-radius: 5px;
-    font-size: 12px;
+  padding: 10px 20px;
+  background-color: #da481b;
+  color: white;
+  border: none;
+  font-family: monospace;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 .restart-btn:hover {
-    background-color: #c53e1f;
+  background-color: #c53e1f;
 }
 
-.CircularProgressbar  {
-    height: 125px;
+.CircularProgressbar {
+  height: 125px;
 }
 
-.pomodro-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    margin-top: 1rem;
+.pomodro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-top: 1rem;
 }

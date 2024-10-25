@@ -1,78 +1,75 @@
 #weather-widget {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: transparent;
-    border-radius: 5px;
-  }
-  
-  #weather-widget h2 {
-    margin-top: 0;
-  }
-  
-  #weather-widget form {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  #weather-widget input[type="text"] {
-    flex-grow: 1;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 3px;
-  }
-  
-  #weather-widget button {
-    padding: 5px 10px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: #fff;
-    color : #000;
-  }
-  
-  #weather-widget #weather-content {
-    margin-top: 10px;
-  }
-  
-  #weather-widget #weather-location {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  #weather-widget #weather-date {
-    margin-top: 5px;
-    font-size: 14px;
-  }
-  
-  #weather-widget #weather-icon {
-    margin-top: 10px;
-  }
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+}
 
-    #weather-widget #weather-icon img {
-        width: 100px;
-        height: 100px;
-        float: left;
-    }
-  
-  #weather-widget #weather-description {
-    font-size: 20px;
-  }
-  #weather-widget #weather-description :hover {
-    cursor: pointer;
-  }
-  
-  #weather-widget #weather-temperature {
-    margin-top: 5px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  #weather-widget #weather-humidity,
-  #weather-widget #weather-wind {
-    margin-top: 5px;
-    font-size: 16px;
-  }
+#weather-widget h2 {
+  margin-top: 0;
+}
 
+#weather-widget form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 
-  
+#weather-widget input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#weather-widget button {
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #000;
+}
+
+#weather-widget #weather-content {
+  margin-top: 10px;
+}
+
+#weather-widget #weather-location {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#weather-widget #weather-date {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#weather-widget #weather-icon {
+  margin-top: 10px;
+}
+
+#weather-widget #weather-icon img {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+#weather-widget #weather-description {
+  font-size: 20px;
+}
+#weather-widget #weather-description :hover {
+  cursor: pointer;
+}
+
+#weather-widget #weather-temperature {
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#weather-widget #weather-humidity,
+#weather-widget #weather-wind {
+  margin-top: 5px;
+  font-size: 16px;
+}
