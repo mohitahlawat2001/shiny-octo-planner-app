@@ -55,25 +55,28 @@ Follow these steps to run the planner application on your local machine:
 Follow these steps to run the planner application on your local machine using Docker:
 
 1.**Create Docker Image**
-   ```
-   docker build -t my-app .
-   ```
+
+```
+docker build -t my-app .
+```
+
 2.**Run Docker Image**
-   ```
-   docker run -p 3000:3000 my-app
-   ```
+
+```
+docker run -p 3000:3000 my-app
+```
+
 3. **Open in Browser**
    - Open your web browser and go to [http://localhost:3000](http://localhost:3000)
    - You should now see the calculator application running locally on your machine inside Docker.
-  
-
 
 ## Project Setup
-3 folders widgets, styles and modals. As the names suggest, 
+
+3 folders widgets, styles and modals. As the names suggest,
+
 - we will place all the JavaScript files we create for the widgets into the widgets folder
 - all the modals into the modals folder
 - a particular CSS file from one of the components into the styles folder. Essentially, we will copy the styles that comes built into one of the packages we have installed in Step 1 Node Package Manager (NPM). This is so that we can customise the styles of the packages instead of being limited to the default style.
-
 
 ## Weather Widget
 
@@ -85,10 +88,9 @@ This function is responsible for fetching the weather data from the API based on
 
 With its user-friendly interface and clear presentation of weather data, the Weather Widget enhances the app's functionality and provides users with the essential information they need to make informed decisions and optimize their daily schedules.
 
-
 ## Custom Game Widget
 
-The custom-made **Game Widget** is an ideal addition to the planner app, providing users with an interactive and enjoyable gaming experience. 
+The custom-made **Game Widget** is an ideal addition to the planner app, providing users with an interactive and enjoyable gaming experience.
 
 ```javascript
 function handleSquareClick(position) {
@@ -104,14 +106,11 @@ Featuring an appealing design and a responsive user interface, the Game Widget e
 
 By integrating the Game Widget into the planner app, users can take a break from their tasks and engage in a fun and strategic game within the app itself. This widget offers entertainment, promotes user engagement, and enhances the overall user experience of the planner app.
 
-
 ## WhiteBoardWidget
 
 The WhiteBoardWidget is a custom-made widget that provides a whiteboard functionality within the planner app. It allows users to draw and sketch their ideas directly on the screen. The main functionality of the widget includes handling mouse events to track drawing actions, such as mouse down, mouse move, and mouse up. It utilizes HTML5 canvas and the 2D drawing context to create a drawing area. The widget provides a responsive and interactive drawing experience, allowing users to freely express their thoughts and visualize their plans. Additionally, it offers a reset button to clear the canvas and start a new drawing session. The WhiteBoardWidget is a valuable addition to the planner app as it enhances creativity, facilitates visual thinking, and provides a convenient platform for brainstorming and organizing ideas.
 
-
 ## NewsWidget
-
 
 The `NewsWidget` component is an appropriate widget to have in the planner app because it provides users with quick access to top headlines from various news sources. It keeps users informed and updated without leaving the planner app interface. The widget fetches news data using the NewsAPI, specifically retrieving top headlines from the US.
 
@@ -121,13 +120,9 @@ The `NewsWidget` is designed with a clean and organized layout. The headlines ar
 
 Overall, the `NewsWidget` enhances the planner app's functionality by integrating relevant news updates, making it convenient for users to stay informed while managing their schedules and tasks.
 
-
 ## QuoteWidget
 
-
 The `QuoteWidget` component is a valuable addition to the planner app as it offers users a source of inspiration and motivation through random quotes. By integrating this widget, users can receive a new quote with a click of a button, enhancing their planning experience with meaningful and uplifting content. The widget fetches quotes from the Quotable API, presenting them in a visually appealing layout with clear separation between the quote content and author. The widget's design is complemented by the provided CSS file, ensuring proper styling and a consistent look. By incorporating the `QuoteWidget`, users can access daily doses of inspiration, empowering them to stay focused and positive throughout their planning endeavors.
-
-
 
 ## Contributing
 
@@ -136,4 +131,3 @@ If you'd like to contribute, please fork the repository and create a pull reques
 ---
 
 Feel free to reach out with any questions or feedback. Happy contributing!✨
-

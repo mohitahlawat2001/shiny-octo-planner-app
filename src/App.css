@@ -109,7 +109,6 @@ select {
   align-items: flex-start;
 }
 
-
 .row {
   display: flex;
   justify-content: space-between;
