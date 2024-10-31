@@ -13,6 +13,7 @@ import VideoRecorder from "./widgets/VideoRecorder";
 import PomodoroWidget from './widgets/PomodoroWidget';
 import Pass from './widgets/Pass';
 import AlarmWidget from './widgets/AlarmWidget';
+import IPAddressWidget from './widgets/IPAddressWidget';
 
 function App() {
   const [widgets, setWidgets] = useState([
@@ -75,6 +76,12 @@ function App() {
       component: <AlarmWidget />, 
       area: "right-widget",
       name: "Alarm Clock"
+    },
+    {
+      id: new Date().getTime() + 11, 
+      component: <IPAddressWidget />, 
+      area: "left-widget", 
+      name: "IP Address"
     }
 
    
