@@ -1,0 +1,65 @@
+.dic-container{
+    display: flex; 
+    margin-top: 1.25rem; 
+    flex-direction: column; 
+    gap: 1rem; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;     
+}
+
+#dic-input{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem; 
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; 
+    border-radius: 0.375rem; 
+    border-width: 2px; 
+    border-color: #2563EB; 
+}
+
+.dic-btn{
+    padding: 0.75rem; 
+    border-radius: 0.375rem; 
+    color: #ffffff; 
+    background-color: #3B82F6; 
+}
+
+.w-fit{
+    width: fit-content;
+}
+
+.dic-head{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dic-subhead{
+    font-weight: 700; 
+    color: #6B7280; 
+}
+
+.meaning-container{
+    padding: 0.75rem; 
+    margin-top: 0.5rem; 
+    margin-bottom: 0.5rem; 
+    border-radius: 0.375rem; 
+    background-color: rgba(247, 244, 244, 0.331);
+}
+
+.pronunciation-icon{
+    color: #93C5FD; 
+}
+
+
+.pronunciation-icon:hover {
+ cursor: pointer; 
+ }
+
+.dic-word{
+    font-size: 1.125rem;
+    line-height: 1.75rem; 
+    font-weight: 700; 
+    color: blue 
+}
