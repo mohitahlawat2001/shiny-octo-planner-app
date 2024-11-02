@@ -14,6 +14,7 @@ import PomodoroWidget from './widgets/PomodoroWidget';
 import Pass from './widgets/Pass';
 import AlarmWidget from './widgets/AlarmWidget';
 import IPAddressWidget from './widgets/IPAddressWidget';
+import Dictionary from './widgets/DictionaryWidget/Dictionary';
 
 function App() {
   const [widgets, setWidgets] = useState([
@@ -82,8 +83,13 @@ function App() {
       component: <IPAddressWidget />, 
       area: "left-widget", 
       name: "IP Address"
+    },
+    {
+      id: new Date().getTime() + 12, 
+      component: <Dictionary />,
+      area: "main-widget", 
+      name: "Dictionary"
     }
-
    
   ]);
 
